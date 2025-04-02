@@ -18,7 +18,6 @@ return new class extends Migration {
             $table->foreignId('category_id');
             $table->boolean('buy_now');
             $table->timestamp('auction_length');
-            $table->string('image_path');
             $table->float('starting_price');
             $table->float('buy_now_price');
             $table->foreignIdFor(User::class);
